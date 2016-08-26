@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="hidden-sm hidden-xs">
+    <div class="header_top_nav background_gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <ul class="left_nav list_inline">
+                        <li><a href="about.html">Оплата</a></li>
+                        <li><a href="delevery.html">Доставка</a></li>
+                        <li><a href="help.html">Сборка</a></li>
+                        <li><a href="contacts.html">Правила возврата</a></li>
+                        <li><a href="rewiew.html">Отзывы</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-lg-offset-2 col-md-7 col-md-offset-0">
+                    <ul class="right_nav list_inline">
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_middle_nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 header_logo">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="index.html"><i class="sprite-header sprite-header_volume media-object"></i></a>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="media-heading up">
+                                Demodizzy
+                            </h2>
+                            <span class="gray_text up">
+                                Демонстрационный магазин
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_phone media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading up">
+                                +7 (499) 703-39-00
+                            </h3>
+                            <span><a href="#callbackModal" class="gray_text" data-toggle="modal">Заказать звонок</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_work_time col-lg-offset-1 col-lg-2">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_clock media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="gray_text media_heading">
+                                Режим работы
+                            </h4>
+                            <span class="gray_text">
+                                Пн-Пт с  10:00 — 20:00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_cart">
+                    <div class="media">
+                        <a class="media-left sticker_cart" href="cart.html">
+                            <i class="sprite-header sprite-header_cart"></i>
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media_heading up gray_text">
+                                В корзине ничего нет
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container search_row background_gray">
+        <div class="row">
+
+            <div class="col-md-4 col-lg-5">
+                <form method="post" action="action" id="searchForm" class="circle_form">
+                    <input type="text" name="search" placeholder="Поиск">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <i class="sprite-header sprite-header_ring"></i>
+                    </div>
+                    <div class="col-md-10 col-lg-10">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="sprite-header sprite-header_user_icon"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading user_name gray_text">
+                                    <a href="#logModal" data-toggle="modal">Войти</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+<main>
+    <div class="main_carousel_block">
+        <div class="container-fluid">
+            <div class="col-md-8">
+                <div class="carousel slide" id="mainCarousel" data-slide="carousel" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainCarousel" class="active"></li>
+                        <li data-target="#mainCarousel"></li>
+                        <li data-target="#mainCarousel"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                        </div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 right_block">
+                <div class="row">
+                    <div class="col-md-12 red_block">
+                        <div class="absolute_block">
+                            <h1>100</h1>
+                            <span class="up">диванов в наличии</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 gray_block">
+                        <p>«МебельШОП» — это тот магазин, где вы можете купить сертифицированную, имеющую гарантию, мебель для кухни, спальни, гостиной, детской
+                            и других комнат вашего дома или вашей квартиры! </p>
+                        <span>
+                            Мы осуществляем поставки мебели
+по Санкт-Петербургу и Ленинградской области.
+                        </span>
+                        <a href="#" class="transparent_btn">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>

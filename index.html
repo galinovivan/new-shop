@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="hidden-sm hidden-xs">
-    <div class="header_top_nav background_gray">
+    <div class="header_top_nav background_light_gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-6">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-lg-2  col-lg-offset-2 col-md-7 col-md-offset-0">
                     <ul class="right_nav list_inline">
-                        <li><a href="#">Войти</a></li>
+                        <li><a href="#" class="clearfix"><i class="sprite_header sprite-icon_user"></i><span>Войти</span></a></li>
                         <li><a href="#">Зарегистрироваться</a></li>
                     </ul>
                 </div>
@@ -42,83 +42,35 @@
                 <div class="col-md-3 header_logo">
                     <div class="media">
                         <div class="media-left">
-                            <a href="index.html"><i class="sprite-header sprite-header_volume media-object"></i></a>
+                            <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
                         </div>
                         <div class="media-body">
                             <h2 class="media-heading up">
-                                Demodizzy
+                                Мебельшоп
                             </h2>
-                            <span class="gray_text up">
-                                Демонстрационный магазин
-                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 header_contact">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="sprite-header sprite-header_phone media-object"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading up">
-                                +7 (499) 703-39-00
-                            </h3>
-                            <span><a href="#callbackModal" class="gray_text" data-toggle="modal">Заказать звонок</a></span>
-                        </div>
-                    </div>
+                <div class="col-md-3 header_work_time">
+                    <span class="gray_text">Ежедневно: с 10:00 – 20:00</span>
                 </div>
-                <div class="col-md-3 header_work_time col-lg-offset-1 col-lg-2">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="sprite-header sprite-header_clock media-object"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="gray_text media_heading">
-                                Режим работы
-                            </h4>
-                            <span class="gray_text">
-                                Пн-Пт с  10:00 — 20:00
-                            </span>
-                        </div>
-                    </div>
+                <div class="col-md-3 header_callback col-lg-3 clearfix">
+                <a href="#" data-toggle="modal" class="float_left">Обратный звонок</a>
+                    <h3 class="float_left">
+                        +7 (499) 703-39-00
+                    </h3>
                 </div>
-                <div class="col-md-3 header_cart">
-                    <div class="media">
-                        <a class="media-left sticker_cart" href="cart.html">
-                            <i class="sprite-header sprite-header_cart"></i>
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media_heading up gray_text">
-                                В корзине ничего нет
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container search_row background_gray">
-        <div class="row">
-
-            <div class="col-md-4 col-lg-5">
-                <form method="post" action="action" id="searchForm" class="circle_form">
-                    <input type="text" name="search" placeholder="Поиск">
-                </form>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-2 col-lg-2">
-                        <i class="sprite-header sprite-header_ring"></i>
-                    </div>
-                    <div class="col-md-10 col-lg-10">
+                <div class="col-md-3 header_cart clearfix">
+                    <div class="float_left"><i class="sprite_header sprite-icon_search"></i></div>
+                    <div class="float_right">
                         <div class="media">
-                            <div class="media-left">
-                                <i class="sprite-header sprite-header_user_icon"></i>
-                            </div>
+                            <a href="cart.html" class="media-left">
+                                <i class="sprite_header sprite-icon_user media-object"></i>
+                            </a>
                             <div class="media-body">
-                                <h4 class="media-heading user_name gray_text">
-                                    <a href="#logModal" data-toggle="modal">Войти</a>
-                                </h4>
+                                <span class="media-heading">
+                                    Корзина товаров
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -126,16 +78,32 @@
             </div>
         </div>
     </div>
-    </header>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+            <ul class="category_nav">
+                <li><a href="#" class="up">Мягкая мебель</a></li>
+                <li><a href="#" class="up">Спальня</a></li>
+                <li><a href="#" class="up">Детская</a></li>
+                <li><a href="#" class="up">Кухня</a></li>
+                <li><a href="#" class="up">Гостинная</a></li>
+                <li><a href="#" class="up">Прихожая</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <div class="main_carousel_block">
         <div class="container-fluid">
             <div class="col-md-8">
-                <div class="carousel slide" id="mainCarousel" data-slide="carousel" data-interval="2000">
+
+                    <div class="col-md-12">
+                <div class="carousel slide" id="mainCarousel" data-ride="carousel" data-interval="2000">
                     <ol class="carousel-indicators">
-                        <li data-target="#mainCarousel" class="active"></li>
-                        <li data-target="#mainCarousel"></li>
-                        <li data-target="#mainCarousel"></li>
+                        <li data-target="#mainCarousel" class="active" data-slide-to="0"></li>
+                        <li data-target="#mainCarousel" data-slide-to="1"></li>
+                        <li data-target="#mainCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
@@ -144,6 +112,7 @@
                         <div class="item"></div>
                     </div>
                 </div>
+                    </div>
             </div>
             <div class="col-md-4 right_block">
                 <div class="row">

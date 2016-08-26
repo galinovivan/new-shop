@@ -1,0 +1,23 @@
+.sprite_header {
+    background-image: url('../img/sprite_header.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_cart {
+    width: 30px;
+    height: 28px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_search {
+    width: 24px;
+    height: 24px;
+    background-position: -45px -5px;
+}
+
+.sprite-icon_user {
+    width: 24px;
+    height: 24px;
+    background-position: -45px -39px;
+}

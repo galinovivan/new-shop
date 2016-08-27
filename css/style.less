@@ -250,7 +250,6 @@ main {
  }
  .news {
    .block_capt {
-     //padding-left: 170px;
      & > .container {
        padding-left: 70px;
      }
@@ -312,6 +311,24 @@ padding-left: 70px;
          p {
            .align();
          }
+       }
+     }
+   }
+ }
+
+ @media screen and (max-width: 1500px) {
+   header {
+     .header_brand {
+       h2 {
+         font-size: @baseFontSize + 8;
+       }
+     }
+     .header_contact {
+       a {
+        font-size: @baseFontSize - 3;
+       }
+       h3 {
+         font-size: @baseFontSize + 5;
        }
      }
    }

@@ -21,3 +21,63 @@
     height: 24px;
     background-position: -45px -39px;
 }
+
+.sprite-adventage {
+    background-image: url('../img/sprite-adventage.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-adventage_1 {
+    width: 62px;
+    height: 42px;
+    background-position: -5px -5px;
+}
+
+.sprite-adventage_2 {
+    width: 47px;
+    height: 47px;
+    background-position: -77px -5px;
+}
+
+.sprite-adventage_3 {
+    width: 55px;
+    height: 53px;
+    background-position: -5px -62px;
+}
+.sprite-social {
+    background-image: url('../img/sprite-social.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-social_fb {
+    width: 19px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-social_inst {
+    width: 14px;
+    height: 14px;
+    background-position: -34px -5px;
+}
+
+.sprite-social_odn {
+    width: 11px;
+    height: 19px;
+    background-position: -34px -29px;
+}
+
+.sprite-social_tw {
+    width: 18px;
+    height: 15px;
+    background-position: -58px -5px;
+}
+
+.sprite-social_vk {
+    width: 23px;
+    height: 13px;
+    background-position: -55px -30px;
+}
+

@@ -13,6 +13,16 @@ body {
   position: relative;
   min-height: 100%;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  background: #4e4e4e;
+}
+.pre_footer {
+  padding-bottom: 300px;
+}
 
 h1 {
   font-family: @extraBold;
@@ -61,6 +71,7 @@ ul {
 a {
   color: @black;
   font-size: @baseFontSize - 1;
+  .text_hover();
 }
 a:active,
 a:visited,
@@ -99,6 +110,9 @@ button,
     }
   }
 
+}
+.no_margin {
+  margin: 0;
 }
 
 .blue_link {
@@ -142,9 +156,11 @@ button,
   }
 }
 .transparent_btn {
+  cursor: pointer;
+  width: 170px;
+  .align();
   .btn_base();
   .btn_hover(@white, @color-base);
-  cursor: auto;
 }
 .float_left {
   float: left;
@@ -210,6 +226,13 @@ button,
     font-family: @extraBold;
     font-size: @x-large;
     .align(left);
+  }
+}
+.block_capt {
+  a {
+    color: @color-base;
+    font-size: @baseFontSize + 3;
+    margin-left: 20px;
   }
 }
 .pagination {
@@ -429,6 +452,7 @@ pre {
     }
   }
 }
+
 
 
 

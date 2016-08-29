@@ -101,6 +101,10 @@ header {
     height: 80px;
     .flex-align();
     li {
+      padding: 10px;
+      &.active {
+        border: 2px solid @color-base;
+      }
       a {
         font-family: @hightBlod;
         font-size: @baseFontSize + 3;
@@ -232,6 +236,7 @@ main {
    .item {
      height: 520px;
      padding: 12px;
+     .transition();
      &.gray_item {
        .item_wrapper {
          background: #f9f9f9;
@@ -240,9 +245,47 @@ main {
      .item_wrapper {
        padding: 50px 35px;
        border: 1px solid @bord_color;
+       position: relative;
+       .shadow_out_hover(@sh_gray);
+       .hide_btn {
+         width: 100%;
+         height: 95px;
+         padding: 20px 35px;
+         bottom: -50px;
+         left: 0;
+         display: none;
+         position: absolute;
+         background: @white;
+         .shadow(0 0 5px 4px @sh_gray);
+         a {
+           .btn_style(170px, 13px);
+           background-image: url('../img/btn_icon.png');
+           background-repeat: no-repeat;
+           background-position: 10% 50%;
+           font-size: @baseFontSize + 5;
+         }
+         .transition();
+         &::before {
+           content: '';
+           display: block;
+           width: 100%;
+           height: 10px;
+           position: absolute;
+           top: -10px;
+           left: 0;
+           background: @white;
+           z-index: 1000;
+         }
+       }
+       &:hover {
+         .hide_btn {
+          display: block;
+           z-index: 100;
+         }
+       }
      }
      .item_title {
-       height: 90px;
+       height: 100px;
        & > span {
          font-size: @baseFontSize + 8;
          color: @color-base;
@@ -286,6 +329,79 @@ main {
    .transform(translateY(-300px));
    margin-bottom: 80px;
 
+ }
+ .catalog_page {
+   .items {
+     margin-bottom: 70px;
+   }
+   .more {
+     margin-bottom: 70px;
+     a {
+       font-family: @baseFont;
+       color: @color-base;
+       border-color: @color-base;
+       width: 230px;
+       font-size: @baseFontSize + 5;
+       .margin_align();
+       .btn_hover(@color-base, @white);
+     }
+   }
+ }
+ .sort_row {
+   & > .container {
+     & > .row {
+       background: @backgroundGray;
+       height: 60px;
+       padding: 20px;
+     }
+   }
+   .sort {
+     ul {
+       li,
+       a {
+         color: #8f8f8f;
+       }
+       li {
+         margin-right: 25px;
+         a {
+           .text_hover();
+           &.active {
+             position: relative;
+             &::after {
+              content: '';
+               display: block;
+               position: absolute;
+               bottom: -5px;
+               left: 0;
+               width: 110%;
+               height: 2px;
+               background: @color-base;
+             }
+           }
+         }
+       }
+     }
+   }
+   .view {
+    ul {
+      & > li {
+        &:first-of-type {
+
+        }
+        margin-right: 10px;
+        i {
+          margin-left: 10px;
+        }
+      }
+      li {
+        a {
+          color: #8f8f8f;
+          text-decoration: underline;
+          .text_hover();
+        }
+      }
+    }
+   }
  }
  .adventage {
    margin-bottom: 70px;

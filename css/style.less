@@ -26,6 +26,31 @@ header {
         }
       }
     }
+    @media screen and (max-width: 991px) {
+      ul {
+        display: block;
+        height: 560px;
+        overflow: scroll;
+        background: @color-base;
+        padding: 30px;
+        margin-top: -560px;
+        .transition();
+        li {
+          display: block;
+          margin-bottom: 40px;
+          a {
+            color: @white;
+            font-size: @baseFontSize * 1.7;
+            &:hover {
+              color: @white;
+            }
+          }
+        }
+        &.active {
+          margin-top: 0;
+        }
+      }
+    }
   }
   .header_middle_nav {
    & > .container {
@@ -71,10 +96,6 @@ header {
     .info_nav {
       .flex-align();
     }
-
-
-
-
   }
   .category_nav {
     height: 80px;
@@ -86,6 +107,49 @@ header {
         color: @black;
         .text_hover();
       }
+    }
+  }
+}
+.header_mobile {
+  height: 100px;
+  padding: 20px 30px;
+  .row {
+    position: relative;
+    padding: 0;
+  }
+  .mobile_top_logo {
+    padding: 5px 0;
+    width: 290px;
+    .margin_align();
+    .media-left {
+      padding-right: 5px;
+    }
+    .media-body {
+      vertical-align: bottom;
+      h3 {
+        font-size: @h2_size - 2;
+        font-family: @extraBold;
+        .padding_margin_clear();
+      }
+    }
+    span {
+      font-size: @baseFontSize - 6;
+      text-transform: uppercase;
+    }
+  }
+  .mobile_top_cart {
+    right: 0;
+    top: 15px;
+  }
+  .mobile_menu_toggle {
+    left: 0;
+    top: 15px;
+    .toggle(@color-base);
+    cursor: pointer;
+    span {
+      .radius(8px);
+      width: 35px;
+      height: 4px;
     }
   }
 }
@@ -295,8 +359,13 @@ main {
        form {
          .form_style();
          .inline {
-           width: 50%;
-           float: left;
+           width: 45%;
+           &:first-of-type {
+             float: left;
+           }
+           &:nth-of-type(2) {
+             float: right;
+           }
          }
          input,
          textarea {
@@ -360,6 +429,35 @@ padding-left: 70px;
        }
      }
    }
+   @media screen and (max-width: 991px) {
+     padding: 60px 0;
+     .row {
+       & > div {
+         padding: 0 5%;
+         p {
+           font-size: @baseFontSize + 4;
+         }
+         &:first-of-type {
+           h3 {
+             color: @white;
+           }
+         }
+         span {
+           color: #8e8e8e;
+         }
+       }
+     }
+     .social_mobile {
+       margin-top: 75px;
+       ul {
+         .flex-align();
+         li {
+
+         }
+       }
+     }
+   }
+
  }
 
 

@@ -16,12 +16,12 @@
 </head>
 <body>
 <!--header-->
-<header class="hidden-sm hidden-xs">
+<header>
     <div class="header_top_nav background_light_gray">
-        <div class="container">
+        <div class="container mobile_all_width">
             <div class="row">
-                <div class="col-md-7 col-lg-6">
-                    <ul class="left_nav list_inline">
+                <div class="col-md-7 col-lg-6 col-xs-12">
+                    <ul class="left_nav list_inline" id="headerMobileMenu">
                         <li><a href="about.html">Оплата</a></li>
                         <li><a href="delevery.html">Доставка</a></li>
                         <li><a href="help.html">Сборка</a></li>
@@ -32,7 +32,7 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-2  col-lg-offset-3 col-md-3 col-md-offset-1">
+                <div class="col-lg-2  col-lg-offset-3 col-md-3 col-md-offset-1 hiddem-xs hidden-sm">
                     <ul class="right_nav list_inline">
                         <li><div class="media">
                             <div class="media-left">
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="header_middle_nav">
+    <div class="header_middle_nav hidden-xs hidden-sm">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 header_brand">
@@ -100,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container hidden-xs hidden-sm">
         <div class="row">
             <div class="col-md-8">
                 <ul class="category_nav">
@@ -115,6 +115,34 @@
         </div>
     </div>
 </header>
+<div class="header_mobile clearfix visible-xs visible-sm">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="mobile_menu_toggle absolute" id="topMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile_top_logo">
+                <div class="media">
+                    <a href="index.html" class="media-left">
+                        <img src="img/logo_mobile.png" alt="logo" class="media-object">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Мебельшоп
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_top_cart absolute">
+                <a href="cart.html" class="sticker_cart">
+                    <img src="img/cart_mobile.png" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <!--end header-->
 <main>
     <div class="order_page">
@@ -126,17 +154,17 @@
             </div>
         </div>
         <div class="order_section">
-            <div class="container">
+            <div class="container mobile_all_width">
                 <div class="row">
                     <div class="col-xs-12 order_caption">
                         <h5>Напомним вам, то в вашей корзине 2 товара на сумму <span>4 500 <i class="fa fa-rub"></i></span> </h5>
                     </div>
                 </div>
                 <div class="row background_light_gray form_wrapper">
-                    <div class="col-xs-3 form_img">
+                    <div class="col-xs-3 form_img hidden-xs hidden-sm">
                         <img src="img/form_img.png" alt="some image" class="img-responsive">
                     </div>
-                    <div class="order_form col-xs-6">
+                    <div class="order_form col-xs-12 col-md-6">
                         <form method="post" id="orderForm" class="clearfix">
                             <input type="text"  name="name" placeholder="Как вас зовут" required="required">
                             <input type="text" name="mail" placeholder="Е-мейл" class="inline">
@@ -154,8 +182,8 @@
 <div class="pre_footer"></div>
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-4 hidden-xs hidden-sm">
                 <div class="footer_payment">
                     <img src="img/footer_payment.png" alt="payment">
                 </div>
@@ -168,7 +196,7 @@
                 <p>Санкт-Петербург, пр. Большевиков, 632</p>
                 <h3>+7 (499) 703-39-00</h3>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-xs hidden-sm">
                 <div class="footer_copy">
                     <p>&copy; Мебельшоп 2016.</p>
                     <p>Все права защищены</p>
@@ -194,7 +222,39 @@
                 </div>
             </div>
         </div>
+        <div class="row visible-xs visible-sm">
+            <div class="col-xs-6">
+                <p>Санкт-Петербург,
+                    пр. Большевиков, 632</p>
+                <h3>
+                    +7(812) 123-45-67
+                </h3>
+            </div>
+            <div class="col-xs-6">
+                <span>Сайт создан бесплатно  на 1С-UMI </span>
+            </div>
+            <div class="col-xs-12 social_mobile">
+                <ul>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_fb"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_vk"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_tw"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_inst"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_odn"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>

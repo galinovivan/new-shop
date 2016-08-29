@@ -6,12 +6,20 @@
   src: url('../fonts/PFCENTROSERIFPRO-BOLD.OTF');
 }
 @font-face {
+  font-family: centros-medium;
+  src: url('../fonts/PFCENTROSERIFPRO-MEDIUM.OTF');
+}
+@font-face {
 font-family: centros-reg;
   src: url('../fonts/PFCENTROSERIFPRO-REGULAR.OTF');
 }
 @font-face {
   font-family: centros-intro;
   src: url('../fonts/PFCENTROSERIFPRO-MEDIUM.OTF');
+}
+@font-face {
+  font-family: intro;
+  src: url('../fonts/intro.otf');
 }
 
 html {
@@ -376,13 +384,13 @@ pre {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -18px;
+    left: 33px;
     background: @red;
     color: @white;
     padding: 2.38px 0;
     font-family: @mediumBold;
-    font-size: @baseFontSize - 4;
+    font-size: @baseFontSize;
     .align();
     .radius(20px);
   }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Оформление заказа
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--header-->
+<header class="hidden-sm hidden-xs">
+    <div class="header_top_nav background_light_gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-6">
+                    <ul class="left_nav list_inline">
+                        <li><a href="about.html">Оплата</a></li>
+                        <li><a href="delevery.html">Доставка</a></li>
+                        <li><a href="help.html">Сборка</a></li>
+                        <li><a href="contacts.html">Правила возврата</a></li>
+                        <li><a href="rewiew.html">Отзывы</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-lg-offset-3 col-md-3 col-md-offset-1">
+                    <ul class="right_nav list_inline">
+                        <li><div class="media">
+                            <div class="media-left">
+                                <i class="sprite_header sprite-icon_user"></i>
+                            </div>
+                            <div class="media-body">
+                                <span><a href="#">войти</a></span>
+                            </div>
+                        </div> </li>
+                        <li><a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_middle_nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 header_brand">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="index.html" class="media-object">
+                                <img src="img/header_logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="up no_margin">
+                                Мебельшоп
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 header_work_time">
+                    <span class="gray_text">
+                        Ежедневно: с 10:00 – 20:00
+                    </span>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <a href="#">Обратный звонок</a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="no_margin">
+                                +7(812) 123-45-67
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 header_cart clearfix">
+                    <div class="header_search float_left">
+                        <div><a href="#"><i class="sprite_header sprite-icon_search"></i></a></div>
+                    </div>
+                    <div class="header_cart_block float_left">
+                        <div class="media">
+                            <a href="#" class="media-left">
+                                <i class="sprite_header sprite-icon_cart media-object"></i>
+                            </a>
+                            <div class="media-body">
+                                <a href="cart.html"><span class="">Корзина товаров</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="category_nav">
+                    <li><a href="#" class="up">Мягкая мебель</a></li>
+                    <li><a href="#" class="up">Спальня</a></li>
+                    <li><a href="#" class="up">Детская</a></li>
+                    <li><a href="#" class="up">Кухня</a></li>
+                    <li><a href="#" class="up">Гостинная</a></li>
+                    <li><a href="#" class="up">Прихожая</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end header-->
+<main>
+    <div class="order_page">
+        <div class="section_capt">
+            <div class="container">
+                <div class="row">
+                <h2>Оформление заказа</h2>
+                </div>
+            </div>
+        </div>
+        <div class="order_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 order_caption">
+                        <h5>Напомним вам, то в вашей корзине 2 товара на сумму <span>4 500 <i class="fa fa-rub"></i></span> </h5>
+                    </div>
+                </div>
+                <div class="row background_light_gray form_wrapper">
+                    <div class="col-xs-3 form_img">
+                        <img src="img/form_img.png" alt="some image" class="img-responsive">
+                    </div>
+                    <div class="order_form col-xs-6">
+                        <form method="post" id="orderForm" class="clearfix">
+                            <input type="text"  name="name" placeholder="Как вас зовут" required="required">
+                            <input type="text" name="mail" placeholder="Е-мейл" class="inline">
+                            <input type="text" name="phone" placeholder="Телефон" required="required" class="inline">
+                            <input type="text" name="delivery" placeholder="Адрес доставки" required="required">
+                            <textarea name="info" cols="30" rows="6" placeholder="Дополнительная информация"></textarea>
+                            <input type="submit" value="Подтвердить заказ" class="alt_btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="pre_footer"></div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer_payment">
+                    <img src="img/footer_payment.png" alt="payment">
+                </div>
+                <div class="umi_copy">
+                    <p>Сайт создан бесплатно на UMI.ru</p>
+                    <p>Работает на UMI.CMS</p>
+                </div>
+            </div>
+            <div class="col-md-4 footer_contact">
+                <p>Санкт-Петербург, пр. Большевиков, 632</p>
+                <h3>+7 (499) 703-39-00</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_copy">
+                    <p>&copy; Мебельшоп 2016.</p>
+                    <p>Все права защищены</p>
+                </div>
+                <div class="footer_social">
+                    <ul>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_fb"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_vk"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_tw"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_inst"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_odn"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,6 +1,18 @@
 @import "varibles";
 @import "mixin";
 
+@font-face {
+  font-family: centros-bold;
+  src: url('../fonts/PFCENTROSERIFPRO-BOLD.OTF');
+}
+@font-face {
+font-family: centros-reg;
+  src: url('../fonts/PFCENTROSERIFPRO-REGULAR.OTF');
+}
+@font-face {
+  font-family: centros-intro;
+  src: url('../fonts/PFCENTROSERIFPRO-MEDIUM.OTF');
+}
 
 html {
   height: 100%;
@@ -25,11 +37,11 @@ footer {
 }
 
 h1 {
-  font-family: @extraBold;
+  font-family: @hightBlod;
   text-shadow: none;
 }
 h2 {
-  font-family: @extraBold;
+  font-family: @hightBlod;
   font-size: @h2_size;
   text-shadow: none;
 }
@@ -37,6 +49,9 @@ h3 {
   font-family: @hightBlod;
   font-size: @h3_size;
   text-shadow: none;
+}
+h5 {
+  font-size: @baseFontSize + 7;
 }
 span, p, li, del, pre {
   text-shadow: none;
@@ -180,8 +195,9 @@ button,
 .background_gray {
   background: @backgroundGray;
 }
+
 .background_light_gray {
-  background: @backgroundLightGray;
+  background: @backGray;
 }
 
 .background_black {

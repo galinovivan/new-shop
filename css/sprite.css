@@ -81,3 +81,27 @@
     background-position: -55px -30px;
 }
 
+.sprite-contact {
+    background-image: url('../img/sprite-contact.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-contact_mail {
+    width: 65px;
+    height: 75px;
+    background-position: -5px -5px;
+}
+
+.sprite-contact_marker {
+    width: 65px;
+    height: 75px;
+    background-position: -80px -5px;
+}
+
+.sprite-contact_phone {
+    width: 65px;
+    height: 75px;
+    background-position: -5px -90px;
+}
+

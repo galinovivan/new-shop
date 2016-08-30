@@ -275,6 +275,30 @@
     margin-top: 40px;
   }
 }
+.custom_form() {
+  padding: 40px 0;
+  form {
+    .form_style();
+    .inline {
+      width: 45%;
+      &:first-of-type {
+        float: left;
+      }
+      &:nth-of-type(2) {
+        float: right;
+      }
+    }
+    input,
+    textarea {
+      margin-bottom: 20px;
+      .placeholder_col();
+      .moz_placeholder();
+      &[type="submit"] {
+        margin-top: 50px;
+      }
+    }
+  }
+}
 .carousel_indicators_style(@width: 8px, @height: 8px) {
   &>li {
 

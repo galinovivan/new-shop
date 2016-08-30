@@ -756,6 +756,34 @@ main {
      }
    }
  }
+ #itemCarousel {
+   .item {
+     height: 500px;
+     img {
+       .margin_align();
+     }
+   }
+ }
+ #prevCarousel {
+   margin-bottom: 50px;
+   .item {
+   }
+   .item_prev {
+     height: 70px;
+     border: 1px solid @bord_color;
+    &:not(:last-of-type) {
+
+    }
+   }
+ }
+ .item_page {
+   .item_about {
+     p {
+       font-size: @baseFontSize + 4;
+       line-height: 2;
+     }
+   }
+ }
  .main_page_news {
    margin-bottom: 50px;
  }

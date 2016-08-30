@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+         Диван кровать
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="header_top_nav background_light_gray">
+        <div class="container mobile_all_width">
+            <div class="row">
+                <div class="col-md-7 col-lg-6 col-xs-12">
+                    <ul class="left_nav list_inline" id="headerMobileMenu">
+                        <li><a href="about.html">Оплата</a></li>
+                        <li><a href="delevery.html">Доставка</a></li>
+                        <li><a href="help.html">Сборка</a></li>
+                        <li><a href="contacts.html">Правила возврата</a></li>
+                        <li><a href="rewiew.html">Отзывы</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-lg-offset-3 col-md-3 col-md-offset-1 hiddem-xs hidden-sm">
+                    <ul class="right_nav list_inline">
+                        <li><div class="media">
+                            <div class="media-left">
+                                <i class="sprite_header sprite-icon_user"></i>
+                            </div>
+                            <div class="media-body">
+                                <span><a href="#">войти</a></span>
+                            </div>
+                        </div> </li>
+                        <li><a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_middle_nav hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 header_brand">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="index.html" class="media-object">
+                                <img src="img/header_logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="up no_margin">
+                                Мебельшоп
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 header_work_time">
+                    <span class="gray_text">
+                        Ежедневно: с 10:00 – 20:00
+                    </span>
+                </div>
+                <div class="col-md-4 header_contact col-lg-3">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <a href="#">Обратный звонок</a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="no_margin">
+                                +7(812) 123-45-67
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4 header_cart clearfix">
+                    <div class="header_search float_left">
+                        <div><a href="#"><i class="sprite_header sprite-icon_search"></i></a></div>
+                    </div>
+                    <div class="header_cart_block float_left">
+                        <div class="media">
+                            <a href="#" class="media-left">
+                                <i class="sprite_header sprite-icon_cart media-object"></i>
+                            </a>
+                            <div class="media-body">
+                                <a href="cart.html"><span class="">Корзина товаров</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <ul class="category_nav">
+                    <li class="active"><a href="#" class="up">Мягкая мебель</a></li>
+                    <li><a href="#" class="up">Спальня</a></li>
+                    <li><a href="#" class="up">Детская</a></li>
+                    <li><a href="#" class="up">Кухня</a></li>
+                    <li><a href="#" class="up">Гостинная</a></li>
+                    <li><a href="#" class="up">Прихожая</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header_mobile clearfix visible-xs visible-sm">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="mobile_menu_toggle absolute" id="topMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile_top_logo">
+                <div class="media">
+                    <a href="index.html" class="media-left">
+                        <img src="img/logo_mobile.png" alt="logo" class="media-object">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Мебельшоп
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_top_cart absolute">
+                <a href="cart.html" class="sticker_cart">
+                    <img src="img/cart_mobile.png" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header-->
+<main>
+<div class="item_page">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs list_inline hidden-xs hidden-sm">
+                <li>
+                    <img src="img/home.png">
+                    <span class="gray_text"> / </span>
+                </li>
+                <li>
+                        <span class="gray_text">
+                            Мягкая мебель 	/
+                        </span>
+                </li>
+                <li>
+                        <span class="gray_text">
+                            Дмваны и кресла 	/
+                        </span>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="block_capt">
+                <h2>Диван-кровать «Шихан» 1400 (седафлекс)</h2>
+            </div>
+        </div>
+    </div>
+    <div class="item_cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                    <div class="carousel slide" id="itemCarousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                            <img src="img/main_item_1.jpg" class="img-responsive" alt="item">
+                            </div>
+                            <div class="item">
+                                <img src="img/item_2.jpg" alt="item" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/item_3.jpg" alt="item" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/item_4.jpg" alt="item" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/item_5.jpg" alt="item" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/item_6.jpg" alt="item" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <a href="#prevCarousel" class="carousel-control left" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="carousel slide" id="prevCarousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-md-2 item_prev active" data-target="#itemCarousel" data-slide-to="0">
+                                                <img src="img/main_item_1.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="col-md-2 data" data-target="#itemCarousel" data-slide-to="1">
+                                                    <img src="img/item_2.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="col-md-2 item_prev" data-target="#itemCarousel" data-slide-to="2">
+                                                <img src="img/item_3.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="col-md-2 item_prev" data-target="#itemCarousel" data-slide-to="3">
+                                                <img src="img/item_4.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="col-md-2 item_prev" data-target="#itemCarousel" data-slide-to="4">
+                                                <img src="img/item_5.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="col-md-2 item_prev" data-target="#itemCarousel" data-slide-to="5">
+                                                <img src="img/item_6.jpg" alt="item" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                           <a href="#prevCarousel" class="carousel-control right" data-slide="next">
+                               <i class="fa fa-angle-right"></i>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="row item_about">
+                        <p>Диван Людовик — это уютная, удобная, практичная и недорогая модель.
+                            Эта модель занимает одно из первых мест по уровню продаж диванов данного класса. Диваны имеющие механизм трансформации Еврокнижка имеют высокую востребованность  на рынках России. Они занимают немного места
+                            в комнате, имеют просторное, удобное для сна спальное место и вместительный ящик для укладки спальных принадлежностей.
+                            Диван Людовик комплектуется двумя подушками и двумя валиками, которые при необходимости легко можно
+                            убрать с дивана.</p>
+                    </div>
+              </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<div class="pre_footer"></div>
+<footer>
+    <div class="container">
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <div class="footer_payment">
+                    <img src="img/footer_payment.png" alt="payment">
+                </div>
+                <div class="umi_copy">
+                    <p>Сайт создан бесплатно на UMI.ru</p>
+                    <p>Работает на UMI.CMS</p>
+                </div>
+            </div>
+            <div class="col-md-4 footer_contact">
+                <p>Санкт-Петербург, пр. Большевиков, 632</p>
+                <h3>+7 (499) 703-39-00</h3>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <div class="footer_copy">
+                    <p>&copy; Мебельшоп 2016.</p>
+                    <p>Все права защищены</p>
+                </div>
+                <div class="footer_social">
+                    <ul>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_fb"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_vk"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_tw"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_inst"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="sprite-social sprite-social_odn"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row visible-xs visible-sm">
+            <div class="col-xs-6">
+                <p>Санкт-Петербург,
+                    пр. Большевиков, 632</p>
+                <h3>
+                    +7(812) 123-45-67
+                </h3>
+            </div>
+            <div class="col-xs-6">
+                <span>Сайт создан бесплатно  на 1С-UMI </span>
+            </div>
+            <div class="col-xs-12 social_mobile">
+                <ul>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_fb"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_vk"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_tw"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_inst"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="sprite-social sprite-social_odn"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/menu.js"></script>
+</body>
+</html>

@@ -670,7 +670,7 @@ main {
        }
       .info_item {
         height: 330px;
-        padding: 80px;
+        padding: 80px 20px;
         border: 10px solid @white;
         background: @backgroundGray;
         border-bottom: 20px solid @white;
@@ -693,7 +693,36 @@ main {
             font-size: @h2_size;
           }
         }
+        @media screen and (max-width: 991px) {
+          height: 200px;
+         border-right: 0 !important;
+          border-left: 0 !important;
+          padding: 35px 0 35px 0;
+          .align();
+          &:not(:last-of-type) {
+            border-bottom: none;
+          }
+          &:last-of-type {
+            border-bottom: 10px solid @white;
+          }
+          .info_icon,
+          .info_text {
+            display: inline-block;
+          }
+          .info_icon {
+            vertical-align: middle;
+            padding-right: 15px;
+          }
+          .info_text {
+            width: 60%;
+          }
+        }
       }
+       @media screen and (max-width: 991px) {
+         position: relative;
+         top: auto;
+         left: auto;
+       }
      }
      #map {
        height: 730px;
@@ -701,9 +730,29 @@ main {
      .info_container {
        height: 240px;
        position: relative;
+       @media screen and (max-width: 991px) {
+         height: auto;
+       }
      }
      .contact_form {
-       .custom_form()
+       .custom_form();
+       @media screen and (max-width: 991px) {
+          form {
+            input {
+              .placeholder_col();
+              .moz_placeholder();
+              &.inline {
+                display: block;
+                float: none !important;
+                width: 100%;
+              }
+              &[type="submit"] {
+                width: 100%;
+                font-size: @h2_size;
+              }
+            }
+          }
+       }
      }
    }
  }

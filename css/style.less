@@ -282,11 +282,7 @@ main {
          background: @white;
          .shadow(0 0 5px 4px @sh_gray);
          a {
-           .btn_style(170px, 13px);
-           background-image: url('../img/btn_icon.png');
-           background-repeat: no-repeat;
-           background-position: 10% 50%;
-           font-size: @baseFontSize + 5;
+          .item_btn();
          }
          .transition();
          &::before {
@@ -367,6 +363,59 @@ main {
        width: 230px;
        font-size: @baseFontSize + 5;
        .margin_align();
+       .btn_hover(@color-base, @white);
+     }
+   }
+ }
+ .catalog_inline_page {
+   .items_inline {
+     .item {
+       padding:0 2.5%;
+       border: 1px solid @bord_color;
+       margin-top: -1px;
+       .item_img {
+         img {
+           max-width: 80%;
+           max-height: 230px;
+           vertical-align: middle;
+         }
+       }
+       .item_title {
+         padding: 80px 0;
+         h5 {
+           color: @color-base;
+         }
+       }
+       .price_sect {
+         padding: 90px 0;
+         .item_price {
+           .align(left);
+           span {
+             font-size: @h2_size - 4;
+           }
+         }
+         .item_btn {
+           a {
+            .item_btn();
+           }
+         }
+       }
+       height: 230px;
+       & > .row {
+       & > div {
+         height: 230px;
+         display: table-cell;
+         vertical-align: middle;
+       }
+     }
+     }
+   }
+   .more {
+     margin: 50px 0;
+     a {
+       border-color: @color-base;
+       color: @color-base;
+       width: 230px;
        .btn_hover(@color-base, @white);
      }
    }

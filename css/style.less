@@ -1,5 +1,17 @@
 @import 'base';
 header {
+  .header_brand {
+    .media-body {
+      h2 {
+        font-family: @extraBold;
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      .media-left {
+        padding-right: 0;
+      }
+    }
+  }
   .header_top_nav {
     border-bottom: 1px solid @bord_color;
     ul {
@@ -85,6 +97,11 @@ header {
             .text_hover();
           }
         }
+        @media screen and (max-width: 1500px) {
+          .header_cart_block {
+            width: 250px;
+          }
+        }
       }
     }
     .media {
@@ -95,6 +112,13 @@ header {
 
     .info_nav {
       .flex-align();
+    }
+    .header_work_time {
+      @media screen and (max-width: 1500px) {
+        span {
+          font-size: @baseFontSize - 2;
+        }
+      }
     }
   }
   .category_nav {

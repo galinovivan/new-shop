@@ -180,6 +180,30 @@ header {
       height: 4px;
     }
   }
+  @media screen and (max-width: 441px) {
+    padding: 20px;
+    .mobile_top_logo {
+      width: 250px;
+      .media-body {
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .mobile_top_logo {
+      width: 200px;
+      padding: 10px 0;
+    }
+    .media {
+      .media-left {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
 }
 main {
   .main_carousel_block {
@@ -265,6 +289,7 @@ main {
             width: 240px;
           }
         }
+        padding: 30px;
       }
       @media screen and (max-width: 991px) {
         .red_block {
@@ -282,6 +307,14 @@ main {
               display: inline-block;
             }
           }
+        }
+        .gray_block {
+          height: auto;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .red_block {
+          height: auto;
         }
       }
     }
@@ -374,6 +407,11 @@ main {
          font-size: @h2_size;
        }
      }
+     @media screen and (max-width: 1500px) {
+
+         margin-top: 27.5 %;
+
+     }
    }
  }
  .special_items {
@@ -381,6 +419,16 @@ main {
    margin-bottom: 80px;
    @media screen and (max-width: 991px) {
      .transform(none);
+     .item {
+       height: auto;
+       padding: 0;
+       margin-bottom: -1px;
+     }
+     .block_capt {
+       background: transparent;
+       height: 125px;
+       padding: 25px;
+     }
    }
 
  }
@@ -511,6 +559,11 @@ main {
          font-size: @h2_size;
        }
      }
+     @media screen and (max-width: 480px) {
+       a {
+         font-size: @baseFontSize + 5;
+       }
+     }
    }
    margin: 0 0 100px 0;
    @media screen and (max-width: 991px) {
@@ -545,6 +598,16 @@ main {
        }
        &.int {
          width: 150px;
+       }
+     }
+     @media screen and (max-width: 335px) {
+       span {
+         &.char {
+           width: 70px;
+         }
+         &.int {
+           width: 130px;
+         }
        }
      }
    }
@@ -651,6 +714,17 @@ main {
      & > .container {
        & > .row {
          height: auto;
+         .adventage_item {
+           .item_icon {
+             height: 0;
+           }
+         }
+       }
+     }
+     .adventage_item {
+       .item_content,
+       .item_title {
+         margin-left: 100px;
        }
      }
    }
@@ -808,6 +882,13 @@ main {
               }
             }
           }
+       }
+       @media screen and (max-width: 480px) {
+         form {
+             input[type="submit"] {
+               font-size: @baseFontSize + 5;
+             }
+         }
        }
      }
    }

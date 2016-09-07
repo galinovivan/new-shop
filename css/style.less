@@ -42,7 +42,7 @@ header {
       ul {
         display: block;
         height: 560px;
-        //overflow: scroll;
+        //overflow: scrogit ll;
         background: @color-base;
         padding: 30px;
         margin-top: -560px;
@@ -1031,3 +1031,48 @@ padding-left: 70px;
      }
    }
  }
+
+.item_block {
+  #catalogItem {
+    .item {
+      height: 380px;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  #itemControl {
+   .catalog_control {
+     .flex-align();
+     padding: 0 50px;
+   .control_item {
+     width: 100px;
+     height: 100px;
+     border: 1px solid @bord_color;
+     .transition();
+     .flex-align(center);
+     &.red_bord,
+     &.active {
+       border-color: @color-base;
+     }
+   }
+
+   }
+  }
+  .carousel-control {
+    top: 10%;
+    opacity: 1;
+    i {
+      font-size: 30px;
+      color: @textGray;
+      .hover_scale(2);
+      .transition(all, 0.1s);
+    }
+    &.left {
+      left: -25px;
+    }
+    &.right {
+      right: -25px;
+    }
+  }
+}

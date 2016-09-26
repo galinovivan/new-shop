@@ -409,7 +409,7 @@ main {
      }
      @media screen and (max-width: 1500px) {
 
-         margin-top: 27.5 %;
+         margin-top: 27.5%;
 
      }
    }
@@ -1074,5 +1074,135 @@ padding-left: 70px;
     &.right {
       right: -25px;
     }
+  }
+}
+&.item_page {
+  .item_cover {
+    padding-top: 100px;
+    height: 550px;
+    #itemCarousel {
+      .item {
+        img {
+          .margin_align();
+        }
+      }
+    }
+  }
+  .item_preview {
+    margin-bottom: 130px;
+    #previewCarousel {
+      position: relative;
+      .item {
+        padding: 0 50px;
+        .item-prev {
+          cursor: pointer;
+          padding: 20px;
+          border: 1px solid @bord_color;
+          height: 120px;
+          width: 14%;
+          float: left;
+          margin-right: 1%;
+          img {
+            .margin_align();
+          }
+        }
+      }
+        .carousel-control {
+          box-shadow: none;
+          text-shadow: none;
+          background-image: none;
+          opacity: 1;
+          top: auto;
+          bottom: auto;
+          width: 11px !important;
+          height: 17px !important;
+          &.left {
+          left: 0;
+          }
+          &.right {
+          right: 0;
+          }
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+    }
+  }
+  .item_option {
+    margin-top: 100px;
+    .price {
+      h2 {
+        font-size: @h2_larg;
+      }
+    }
+    .item_btn {
+      a.btn_base {
+        height: 60px;
+        padding: 22px;
+        width: 215px;
+      }
+    }
+    .option {
+      & > div {
+        margin-bottom: 10px;
+      }
+      span,
+      p {
+        font-size: @baseFontSize + 2;
+        color: @lightBlack;
+      }
+      p {
+        padding-right: 30%;
+        padding-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    #itemCarousel {
+      .item {
+        height: 500px !important;
+      }
+      .carousel-indicators {
+        bottom: 0;
+        li {
+          background: transparent;
+          border-color: @color-base;
+          width: 10px;
+          height: 10px;
+          margin: 0;
+          margin-right: 10px;
+          &.active {
+            width: 10px;
+            height: 10px;
+            margin: 0;
+            margin-right: 10px;
+            background: @color-base;
+          }
+        }
+      }
+    }
+    .item_option {
+      .price {
+        background: @backgroundGray;
+        border: 1px solid @bord_color;
+        padding: 20px;
+        margin-bottom: 50px;
+        h2 {
+          .align();
+        }
+      }
+    }
+    .option {
+      padding-left: 30px;
+    }
+  }
+}
+.item_btn {
+  margin-bottom: 100px;
+  padding: 0 5%;
+  a.btn_base {
+    height: 70px;
+    padding: 20px;
   }
 }

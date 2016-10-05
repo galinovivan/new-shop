@@ -959,7 +959,7 @@ main .main_carousel_block .right_block .gray_block span {
   background-position: 10% 50%;
   font-size: 18px;
   margin-bottom: 100px;
-  padding: 0 5%;
+  padding: 13px 5%;
 }
 .items .item .item_wrapper .hide_btn a:hover {
   filter: brightness(110%);
@@ -1136,7 +1136,7 @@ main .main_carousel_block .right_block .gray_block span {
   background-position: 10% 50%;
   font-size: 18px;
   margin-bottom: 100px;
-  padding: 0 5%;
+  padding: 13px 5%;
 }
 .catalog_inline_page .item .price_sect .item_btn a:hover,
 .cart_page .item .price_sect .item_btn a:hover {
@@ -1237,9 +1237,10 @@ main .main_carousel_block .right_block .gray_block span {
   background-position: 10% 50%;
   font-size: 18px;
   margin-bottom: 100px;
-  padding: 0 5%;
+  padding: 13px 5%;
   background-image: none;
   width: 230px;
+  padding: 20px;
 }
 .catalog_inline_page .result_sum a:hover,
 .cart_page .result_sum a:hover {
@@ -2023,7 +2024,7 @@ footer .row > div:last-of-type p {
 }
 .item_btn {
   margin-bottom: 100px;
-  padding: 0 5%;
+  padding: 13px 5%;
 }
 .item_btn a.btn_base {
   height: 70px;

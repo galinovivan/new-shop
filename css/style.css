@@ -2016,9 +2016,11 @@ footer .row > div:last-of-type p {
 }
 .item_page .item_preview #previewCarousel .carousel-control.left {
   left: 0;
+  top: 10%;
 }
 .item_page .item_preview #previewCarousel .carousel-control.right {
-  right: 0;
+  right: 10%;
+  top: 35%;
 }
 .item_page .item_preview #previewCarousel .carousel-control img {
   height: auto;

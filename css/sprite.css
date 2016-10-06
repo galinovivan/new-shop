@@ -104,4 +104,27 @@
     height: 75px;
     background-position: -5px -90px;
 }
+.sprite-count {
+    background-image: url('../img/sprite_count.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-count-count_fb {
+    width: 19px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-count-count_tw {
+    width: 18px;
+    height: 15px;
+    background-position: -34px -5px;
+}
+
+.sprite-count-count_vk {
+    width: 23px;
+    height: 13px;
+    background-position: -34px -30px;
+}
 

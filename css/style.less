@@ -268,19 +268,24 @@ main {
         }
       }
       .gray_block {
-        padding: 70px 52.5% 70px 10%;
-        height: 640px;
+        padding: 90px 40% 70px 10%;
+        height: 620px;
         background: @grayBlack;
         p {
           font-size: @baseFontSize + 6;
           color: @white;
           margin-bottom: 30px;
+          font-weight: 100;
         }
         span {
           display: block;
           font-size: @baseFontSize + 3;
           color: #b5b5b5;
           margin-bottom: 50px;
+          line-height: 1.7;
+        }
+        @media screen and (max-width: 1500px) {
+          padding: 90px 10% 70px 10%;
         }
         @media screen and (max-width: 991px){
           padding: 60px;
@@ -289,7 +294,7 @@ main {
             width: 240px;
           }
         }
-        padding: 30px;
+        //padding: 30px;
       }
       @media screen and (max-width: 991px) {
         .red_block {
@@ -321,78 +326,6 @@ main {
   }
 }
  .items {
-   .item {
-     height: 520px;
-     padding: 12px;
-     .transition();
-     &.gray_item {
-       .item_wrapper {
-         background: #f9f9f9;
-       }
-     }
-     .item_wrapper {
-       padding: 50px 35px;
-       border: 1px solid @bord_color;
-       position: relative;
-       .shadow_out_hover(@sh_gray);
-       .hide_btn {
-         width: 100%;
-         height: 95px;
-         padding: 20px 35px;
-         bottom: -50px;
-         left: 0;
-         display: none;
-         position: absolute;
-         background: @white;
-         .shadow(0 0 5px 4px @sh_gray);
-         a {
-          .item_btn();
-         }
-         .transition();
-         &::before {
-           content: '';
-           display: block;
-           width: 100%;
-           height: 10px;
-           position: absolute;
-           top: -10px;
-           left: 0;
-           background: @white;
-           z-index: 1000;
-         }
-       }
-       &:hover {
-         .hide_btn {
-          display: block;
-           z-index: 100;
-         }
-       }
-     }
-     .item_title {
-       height: 100px;
-       & > span {
-         font-size: @baseFontSize + 8;
-         color: @color-base;
-       }
-       .item_option {
-         margin-top: 25px;
-       }
-     }
-     .item_img {
-       height: 270px;
-       img {
-         .margin_align();
-       }
-     }
-     .item_price {
-       span {
-         font-size: @baseFontSize * 2;
-         i {
-           font-size: @baseFontSize * 1.7;
-         }
-       }
-     }
-   }
    .review_item {
      margin-top: 17%;
      height: 275px;
@@ -414,6 +347,78 @@ main {
      }
    }
  }
+.item {
+  height: 520px;
+  padding: 12px;
+  .transition();
+  &.gray_item {
+    .item_wrapper {
+      background: #f9f9f9;
+    }
+  }
+  .item_wrapper {
+    padding: 50px 35px;
+    border: 1px solid @bord_color;
+    position: relative;
+    .shadow_out_hover(@sh_gray);
+    .hide_btn  {
+      width: 100%;
+      height: 95px;
+      padding: 20px 35px;
+      bottom: -50px;
+      left: 0;
+      display: none;
+      position: absolute;
+      background: @white;
+      .shadow(0 0 5px 4px @sh_gray);
+      a {
+        .item_btn();
+      }
+      .transition();
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        background: @white;
+        z-index: 1000;
+      }
+    }
+    &:hover {
+      .hide_btn {
+        display: block;
+        z-index: 100;
+      }
+    }
+  }
+  .item_title {
+    height: 100px;
+    & > span {
+      font-size: @baseFontSize + 8;
+      color: @color-base;
+    }
+    .item_option {
+      margin-top: 25px;
+    }
+  }
+  .item_img {
+    height: 270px;
+    img {
+      .margin_align();
+    }
+  }
+  .item_price {
+    span {
+      font-size: @baseFontSize * 2;
+      i {
+        font-size: @baseFontSize * 1.7;
+      }
+    }
+  }
+}
  .special_items {
    .transform(translateY(-300px));
    margin-bottom: 80px;
@@ -750,7 +755,9 @@ main {
       .item_content {
         color: #808080;
       }
-
+        h3 {
+          font-family: @baseFont;
+        }
     }
    @media screen and (min-width: 991px) and (max-width: 1500px) {
      .news_item {
@@ -933,11 +940,15 @@ main {
   .shadow(none);
 }
  .item_page {
+   margin-bottom: 110px;
    .item_about {
      p {
        font-size: @baseFontSize + 4;
        line-height: 2;
      }
+   }
+   .item_btn {
+     .btn_base();
    }
  }
  .main_page_news {
@@ -1094,6 +1105,7 @@ padding-left: 70px;
     #previewCarousel {
       position: relative;
       .item {
+        height: auto;
         padding: 0 50px;
         .item-prev {
           cursor: pointer;
@@ -1130,11 +1142,25 @@ padding-left: 70px;
         }
     }
   }
-  .item_option {
+  .about_item {
+    margin-top: 50px;
+    padding-right: 5%;
+    p {
+      font-size: @baseFontSize + 3;
+      line-height: 1.7;
+    }
+  }
+  .item_option_block {
     margin-top: 100px;
+    padding: 40px;
     .price {
       h2 {
         font-size: @h2_larg;
+        margin-top: 0;
+        font-family: @baseFont;
+        i {
+          font-size: @baseFontSize * 1.8;
+        }
       }
     }
     .item_btn {
@@ -1156,6 +1182,52 @@ padding-left: 70px;
       p {
         padding-right: 30%;
         padding-top: 20px;
+      }
+    }
+    .social_count_row {
+      margin-top: 200px;
+      .social_count {
+        display: block;
+        width: 85px;
+        height: 40px;
+        float: left;
+        margin-right: 10px;
+        .img_hover();
+        &.fb {
+          background: @fb;
+          span {
+          border-right: 1px solid lighten(@fb, 25%);
+          }
+        }
+        &.vk {
+          background: @vk;
+          span {
+            border-right: 1px solid lighten(@vk, 25%);
+          }
+        }
+        &.tw {
+          background: @tw;
+          span {
+            border-right: 1px solid lighten(@tw, 25%);
+          }
+        }
+        span {
+          display: block;
+          width: 50%;
+          height: 40px;
+          float: left;
+          color: @white;
+          .align();
+          &:first-of-type {
+            padding: 12px 0;
+            i {
+              .margin_align();
+            }
+          }
+          &:last-of-type {
+            padding: 10px 0;
+          }
+        }
       }
     }
   }

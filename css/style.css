@@ -967,6 +967,9 @@ main .main_carousel_block .right_block .gray_block span {
 .item.gray_item .item_wrapper {
   background: #f9f9f9;
 }
+.item.gray_item .hide_btn {
+  background: #f9f9f9 !important;
+}
 .item .item_wrapper {
   padding: 50px 35px;
   border: 1px solid #ebebeb;
@@ -987,7 +990,7 @@ main .main_carousel_block .right_block .gray_block span {
   width: 100%;
   height: 95px;
   padding: 20px 35px;
-  bottom: -50px;
+  bottom: -100px;
   left: 0;
   display: none;
   position: absolute;
@@ -1041,7 +1044,7 @@ main .main_carousel_block .right_block .gray_block span {
   position: absolute;
   top: -10px;
   left: 0;
-  background: #ffffff;
+  background: #f9f9f9;
   z-index: 1000;
 }
 .item .item_wrapper:hover .hide_btn {

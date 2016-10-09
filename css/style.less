@@ -423,6 +423,9 @@ main {
         font-size: @baseFontSize * 1.7;
       }
     }
+    @media screen and (max-width: 991px) {
+      .align();
+    }
   }
 }
  .special_items {
@@ -1107,6 +1110,9 @@ padding-left: 70px;
         }
       }
     }
+    @media screen and (max-width: 991px) {
+      padding-top: 0;
+    }
   }
   .item_preview {
     margin-bottom: 130px;
@@ -1183,6 +1189,12 @@ padding-left: 70px;
     padding: 40px;
     .cart_btn {
       margin-bottom: 50px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: 500px) {
+        width: 150px;
+      }
     }
     .price {
       h2 {

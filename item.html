@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <!-- <script src="https://use.fontawesome.com/bf8c20532a.js"></script> -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <ul class="category_nav">
-                    <li class="active"><a href="#" class="up">Мягкая мебель</a></li>
+                    <li><a href="#" class="up">Мягкая мебель</a></li>
                     <li><a href="#" class="up">Спальня</a></li>
                     <li><a href="#" class="up">Детская</a></li>
                     <li><a href="#" class="up">Кухня</a></li>
@@ -115,11 +115,40 @@
         </div>
     </div>
 </header>
+<div class="header_mobile clearfix visible-xs visible-sm">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="mobile_menu_toggle absolute" id="topMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile_top_logo">
+                <div class="media">
+                    <a href="index.html" class="media-left">
+                        <img src="img/logo_mobile.png" alt="logo" class="media-object">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Мебельшоп
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_top_cart absolute">
+                <a href="cart.html" class="sticker_cart">
+                    <img src="img/cart_mobile.png" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header-->
 <main class="item_page">
 
-    <div class="container mobile_full_width">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
                 <div class="section_capt">
                     <h1>Диван-кровать «Шихан» 1400 (седафлекс)</h1>
                 </div>
@@ -151,7 +180,7 @@
                     </div>
                 </div>
                 <div class="row hidden-xs hidden-sm">
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <div class="carousel slide" id="previewCarousel" data-ride="carousel">
                             <a href="#itemCarousel" class="carousel-control left" data-slide="prev">
                                 <img src="img/item_left.png" alt="назад">
@@ -195,14 +224,14 @@
                         убрать с дивана.  </p>
                 </div>
             </div>
-            <div class="col-md-5 col-lg-4 item_option_block background_gray">
+            <div class="col-md-5 col-lg-4 item_option_block background_gray col-xs-12">
                 <div class="row">
-                    <div class="col-md-6 price col-xs-12 text-left">
+                    <div class="col-md-6 price col-xs-6 text-left">
                         <h2>
                             26 240 <i class="fa fa-ruble"></i>
                         </h2>
                     </div>
-                    <div class="col-md-6 hidden-xs hidden-sm">
+                    <div class="col-xs-6">
                         <a class="cart_btn float_right" href="#">Купить</a>
                     </div>
                 </div>
@@ -281,12 +310,7 @@
 
                 </div>
             </div>
-            <div class="row visible-xs visible-sm">
-                <div class="col-xs-12 item_btn">
-                    <a class="btn_base" href="#">Оставить заявку</a>
-                </div>
-            </div>
-        </div>
+          </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="section_capt">
@@ -431,3 +455,5 @@
     </div>
 </footer>
 <script src="js/menu.js"></script>
+</body>
+</html>

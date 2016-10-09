@@ -957,7 +957,8 @@ main {
    .item_btn {
      .btn_base();
    }
- }
+
+}
  .main_page_news {
    margin-bottom: 50px;
  }
@@ -1162,13 +1163,19 @@ padding-left: 70px;
           }
         }
     }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 0;
+    }
   }
   .about_item {
     margin-top: 50px;
-    padding-right: 5%;
+    padding-right: 20px;
     p {
       font-size: @baseFontSize + 3;
       line-height: 1.7;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 0 5%;
     }
   }
   .item_option_block {
@@ -1253,9 +1260,15 @@ padding-left: 70px;
           }
         }
       }
+      @media screen and (max-width: 991px) {
+        margin-top: 50px;
+      }
     }
     @media screen and (max-width: 1500px) {
       padding: 40px 20px;
+    }
+    @media screen and (max-width: 991px) {
+      margin-top: 0;
     }
   }
   @media screen and (max-width: 991px) {
@@ -1295,6 +1308,9 @@ padding-left: 70px;
     }
     .option {
       padding-left: 30px;
+      @media screen and (max-width: 991px) {
+        padding-left: 0;
+      }
     }
   }
 }

@@ -269,8 +269,9 @@ main {
       }
       .gray_block {
         padding: 90px 40% 70px 10%;
-        height: 620px;
+        height: 600px;
         background: @grayBlack;
+        z-index: 100;
         p {
           font-size: @baseFontSize + 6;
           color: @white;
@@ -398,7 +399,7 @@ main {
     }
   }
   .item_title {
-    height: 100px;
+    height: 120px;
     & > span {
       font-size: @baseFontSize + 8;
       color: @color-base;
@@ -429,6 +430,12 @@ main {
   }
 }
  .special_items {
+   .block_capt {
+     h2 {
+       padding: 10px 0;
+       margin-top: 30px;
+     }
+   }
    .transform(translateY(-300px));
    margin-bottom: 80px;
    @media screen and (max-width: 991px) {
@@ -742,6 +749,9 @@ main {
          margin-left: 100px;
        }
      }
+   }
+   @media screen and (min-width: 991px) {
+     margin-top: -275px;
    }
  }
  .news {

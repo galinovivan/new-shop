@@ -94,7 +94,7 @@ ul {
 }
 a {
   color: @black;
-  font-size: @baseFontSize - 1;
+  font-size: @baseFontSize;
   .text_hover();
 }
 a:active,
@@ -138,6 +138,12 @@ button,
     }
   }
 
+}
+.translate_y_300 {
+  .transform(translateY(-300px));
+  @media screen and (max-width: 991px) {
+    .transform(none);
+  }
 }
 .separate_20 {
   border-top: 1px solid @bord_color;

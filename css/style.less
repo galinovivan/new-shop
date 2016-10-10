@@ -1,4 +1,5 @@
 @import 'base';
+
 header {
   .header_brand {
     .media-body {
@@ -16,12 +17,13 @@ header {
     border-bottom: 1px solid @bord_color;
     ul {
       .flex-align();
-      padding: 15px 0;
+      padding: 20px 0;
       li {
         a {
           color: @textGray;
           .text_hover();
           cursor: pointer;
+          font-size: @baseFontSize + 1;
         }
       }
       &.right_nav {
@@ -34,6 +36,13 @@ header {
           a {
             color: #818181;
             .text_hover();
+            text-transform: capitalize;
+            vertical-align: bottom;
+          }
+        }
+        .media {
+          .media-body {
+            vertical-align: middle;
           }
         }
       }
@@ -65,6 +74,13 @@ header {
     }
   }
   .header_middle_nav {
+    .header_brand {
+      .media {
+        .media-body {
+          vertical-align: bottom;
+        }
+      }
+    }
    & > .container {
      & > .row {
        border-bottom: 1px solid @bord_color;
@@ -213,7 +229,7 @@ main {
         width: 135px;
         height: 100px;
         background: @color-base;
-        bottom: 0;
+        //bottom: 0;
         margin-bottom: 0;
         li {
           width: 5px;
@@ -228,6 +244,9 @@ main {
           &:nth-of-type(2) {
             margin: 0 15px;
           }
+        }
+        @media screen and (max-width: 991px) {
+          bottom: 0;
         }
       }
       .carousel-inner {
@@ -446,7 +465,6 @@ main {
        margin-top: 30px;
      }
    }
-   .transform(translateY(-300px));
    margin-bottom: 80px;
    @media screen and (max-width: 991px) {
      .transform(none);
@@ -709,6 +727,7 @@ main {
    }
  }
  .adventage {
+   margin-top: -275px;
    margin-bottom: 70px;
    & > .container {
      & > .row {
@@ -761,7 +780,7 @@ main {
      }
    }
    @media screen and (min-width: 991px) {
-     margin-top: -275px;
+     //margin-top: -275px;
    }
  }
  .news {

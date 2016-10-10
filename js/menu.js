@@ -27,9 +27,6 @@ $(document).ready(function() {
                 initCollapse();
                 event.preventDefault();
             })
-        } else {
-
-            return;
         }
     };
 });

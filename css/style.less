@@ -387,7 +387,7 @@ main {
         position: absolute;
         top: -10px;
         left: 0;
-        background: #f9f9f9;
+        background: #ffffff;
         z-index: 1000;
       }
     }
@@ -426,6 +426,15 @@ main {
     }
     @media screen and (max-width: 991px) {
       .align();
+    }
+  }
+  &.gray_item {
+    .item_wrapper {
+      .hide_btn {
+        &::before {
+          background: #f9f9f9;
+        }
+      }
     }
   }
 }

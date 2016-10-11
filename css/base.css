@@ -352,6 +352,9 @@ button:focus,
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
   }
+  .block_capt h2 {
+    margin-top: 25px;
+  }
 }
 .breadcrumbs {
   margin-top: 30px;

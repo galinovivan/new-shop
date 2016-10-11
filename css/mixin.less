@@ -412,6 +412,22 @@
     background: darken(@color, 5%);
   }
 }
+.placeholder_style(@color: @black, @size: 16px) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+}
+.moz_placeholder_style(@color: @black; @size: 16px) {
+  &::-moz-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+  &:-moz-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+}
 
 
 
